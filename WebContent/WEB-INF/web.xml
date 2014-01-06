@@ -4,12 +4,7 @@
   <display-name>WebOne</display-name>
   
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>bem-vindo-JSP.jsp</welcome-file>
   </welcome-file-list>
   
   <servlet>
@@ -21,7 +16,6 @@
     <url-pattern>/one</url-pattern>
   </servlet-mapping>
   
-  <!--
   <servlet>
   	<servlet-name>AddContato</servlet-name>
   	<servlet-class>br.com.tdv.servlet.AdicionaContatoServlet</servlet-class>
@@ -30,6 +24,5 @@
   	<servlet-name>AddContato</servlet-name>
   	<url-pattern>/adicionaContato</url-pattern>
   </servlet-mapping>
-  -->
   
 </web-app>
