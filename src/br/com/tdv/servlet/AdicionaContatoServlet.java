@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.tdv.dao.ContatoDao;
+import br.com.tdv.model.Contato;
+
 
 public class AdicionaContatoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -25,9 +28,14 @@ public class AdicionaContatoServlet extends HttpServlet {
     	String endereco = request.getParameter("endereco");
     	String email = request.getParameter("email");
     	String data = request.getParameter("dataNascimento");
+    	String telefone = request.getParameter("telefone");
     	
     	try {
-        	// Dao ----> Gravando no DB.    		
+        	// Dao ----> Gravando no DB.
+        	//Contato c = new Contato();
+        	//c.setNome(nome);
+        	// ...
+        	//new ContatoDao().save(c);    		
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -40,6 +48,7 @@ public class AdicionaContatoServlet extends HttpServlet {
     	out.println("<p>Nome: "+nome+"</p>");
     	out.println("<p>Endereço: "+endereco+"</p>");
     	out.println("<p>Email: "+email+"</p>");
+    	out.println("<p>Telefone: "+telefone+"</p>");
     	out.println("<p>Data de Nascimento: "+data+"</p>");
     	out.println("<a href='add_contato.html'><<< Voltar</a>");
     	out.println("</body>");    	

@@ -12,7 +12,7 @@
 	
 	<%= iniMsg %>
 	
-	<form action="mostrar_idade.jsp">
+	<form action="mostrarIdade">
 		<p>Digite a Data de Nascimento:</p>
 		<p><input type="date" name="dataNascimento"></p>
 		<p><input type="submit" value="Calcular"></p>
