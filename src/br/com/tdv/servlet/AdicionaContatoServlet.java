@@ -2,6 +2,7 @@ package br.com.tdv.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Calendar;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -32,10 +33,13 @@ public class AdicionaContatoServlet extends HttpServlet {
     	
     	try {
         	// Dao ----> Gravando no DB.
-        	//Contato c = new Contato();
-        	//c.setNome(nome);
-        	// ...
-        	//new ContatoDao().save(c);    		
+        	Contato c = new Contato();
+        	c.setNome(nome);
+        	c.setDataNascimento(Calendar.getInstance());
+        	c.setEmail(email);
+        	c.setTelefone(telefone);
+        	c.setEndereco(endereco);
+        	new ContatoDao().save(c);    		
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();

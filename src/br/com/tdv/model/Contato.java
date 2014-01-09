@@ -8,6 +8,7 @@ public class Contato {
 	private String nome;
 	private String email;
 	private String telefone;
+	private String endereco;
 	private Calendar dataNascimento;
 	
 	public Calendar getDataNascimento() {
@@ -40,7 +41,12 @@ public class Contato {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	
+	public String getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}	
 	
 	
 }

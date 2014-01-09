@@ -8,5 +8,6 @@
 </head>
 <body>
 	Sua idade é: ${ param.idade }
+	Sua idade é: <%= request.getParameter("idade") %>
 </body>
 </html>
